@@ -22,15 +22,25 @@ javac java/*.java
 2. Create the place to save the log and open the port for each member listening
    
 mkdir -p logs_9
+
 java -cp ./java CouncilMember M1 --config ../network.config --profile reliable --port 9001 --control-port 10001 > logs_9/M1.log 2>&1 &
+
 java -cp ./java CouncilMember M2 --config ../network.config --profile reliable --port 9002 --control-port 10002 > logs_9/M2.log 2>&1 &
+
 java -cp ./java CouncilMember M3 --config ../network.config --profile reliable --port 9003 --control-port 10003 > logs_9/M3.log 2>&1 &
+
 java -cp ./java CouncilMember M4 --config ../network.config --profile reliable --port 9004 --control-port 10004 > logs_9/M4.log 2>&1 &
+
 java -cp ./java CouncilMember M5 --config ../network.config --profile reliable --port 9005 --control-port 10005 > logs_9/M5.log 2>&1 &
+
 java -cp ./java CouncilMember M6 --config ../network.config --profile reliable --port 9006 --control-port 10006 > logs_9/M6.log 2>&1 &
+
 java -cp ./java CouncilMember M7 --config ../network.config --profile reliable --port 9007 --control-port 10007 > logs_9/M7.log 2>&1 &
+
 java -cp ./java CouncilMember M8 --config ../network.config --profile reliable --port 9008 --control-port 10008 > logs_9/M8.log 2>&1 &
+
 java -cp ./java CouncilMember M9 --config ../network.config --profile reliable --port 9009 --control-port 10009 > logs_9/M9.log 2>&1 &
+
 
 3. M5 make a proposal:
    
